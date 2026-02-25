@@ -1,0 +1,79 @@
+.page {
+  @apply max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-12;
+}
+
+.leftCol {
+  @apply flex flex-col;
+}
+
+.heading {
+  @apply text-2xl font-bold text-bramel-dark mb-6;
+}
+
+.subheading {
+  @apply text-xl font-bold text-bramel-dark mb-4 mt-8;
+}
+
+.text {
+  @apply text-sm text-bramel-dark leading-relaxed mb-4 text-justify;
+}
+
+.bulletList {
+  @apply list-disc ml-6 mb-4;
+}
+
+.bulletItem {
+  @apply text-sm text-bramel-dark leading-relaxed mb-1;
+}
+
+.partnerLogos {
+  @apply flex items-center gap-4 my-4;
+}
+
+.partnerLogo {
+  @apply h-8;
+}
+
+.partnerLink {
+  @apply text-sm text-bramel-orange;
+}
+
+.rightCol {
+  @apply flex flex-col;
+}
+
+.teamHeading {
+  @apply text-2xl font-bold text-bramel-orange mb-4;
+}
+
+.teamIntro {
+  @apply text-sm text-bramel-orange leading-relaxed mb-6;
+}
+
+.teamCard {
+  @apply border border-bramel-border-grey rounded p-5 mb-4;
+}
+
+.cardHeader {
+  @apply flex items-start justify-between mb-1;
+}
+
+.cardName {
+  @apply text-sm font-bold text-bramel-dark;
+}
+
+.cardTitle {
+  @apply text-sm text-bramel-orange mb-3;
+}
+
+.linkedinBtn {
+  @apply text-xs bg-bramel-dark text-white px-3 py-1 rounded no-underline;
+}
+
+.linkedinBtn:hover {
+  @apply bg-bramel-grey no-underline;
+}
+
+.cardBio {
+  @apply text-xs text-bramel-dark leading-relaxed text-justify;
+}

@@ -1,0 +1,103 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import styles from "./about_us.module.css";
+---
+
+<BaseLayout title="About Bramel | Boutique investment bank" currentPage="/about_us">
+  <main class={styles.page}>
+    <div class={styles.leftCol}>
+      <h1 class={styles.heading}>Diverse experience</h1>
+
+      <p class={styles.text}>
+        For over 20 years, Bramel has been developing innovative corporate finance
+        solutions for clients and partners that deliver measurable results.
+      </p>
+
+      <p class={styles.text}>
+        Bramel's team has diverse experience across different businesses, sectors and
+        as shareholders, funders and operators.
+      </p>
+
+      <p class={styles.text}>
+        Leveraging this experience, Bramel has participated and assisted with:
+      </p>
+
+      <ul class={styles.bulletList}>
+        <li class={styles.bulletItem}>Mergers &amp; acquisitions, including management and leveraged buyouts</li>
+        <li class={styles.bulletItem}>Listings and delistings</li>
+        <li class={styles.bulletItem}>Capital raising, including equity and debt funding</li>
+        <li class={styles.bulletItem}>Special opportunity transactions</li>
+      </ul>
+
+      <h2 class={styles.subheading}>A partnership ethos</h2>
+
+      <p class={styles.text}>
+        Bramel has acted as a seller and a buyer of assets, and also been an active
+        participant in the management structure of businesses subject to buyouts,
+        recapitalisations and rigorous restructurings.
+      </p>
+
+      <p class={styles.text}>
+        This 'close to the bone' experience uniquely positions Bramel to work with
+        shareholders and management teams as a partner rather than as an
+        independent firm shield from the challenges and vagaries of a transaction.
+      </p>
+
+    </div>
+
+    <div class={styles.rightCol}>
+      <h2 class={styles.teamHeading}>Team</h2>
+
+      <p class={styles.teamIntro}>
+        Bramel's dedicated team bring their diverse skills and over 60
+        years of combined experience to bear to craft solutions for its
+        clients, principals and partners that create value for and meet
+        the objectives of all stakeholders.
+      </p>
+
+      <div class={styles.teamCard}>
+        <div class={styles.cardHeader}>
+          <div>
+            <h3 class={styles.cardName}>Chris Ransome, CA(SA)</h3>
+            <p class={styles.cardTitle}>Executive Chairman</p>
+          </div>
+          <a href="#" class={styles.linkedinBtn}>LinkedIn profile</a>
+        </div>
+        <p class={styles.cardBio}>
+          Chris, a Deloitte alumni, started his own corporate finance firm in
+          1995 and has since provided strategic corporate financial services to
+          a broad portfolio of both public and private companies; acted as the
+          promoter for two IPO's on the JSE; and initiated, negotiated and
+          implemented a wide range of substantial corporate transactions.
+          During this time, Chris has accepted senior leadership positions, both
+          executive and non-executive on the boards of conglomerates involved
+          in the engineering, industrial, automotive and information technology
+          industries. Currently, Chris holds three non-executive board positions,
+          two as Chairperson and one as Chair of the financial oversight and
+          risk committee.
+        </p>
+      </div>
+
+      <div class={styles.teamCard}>
+        <div class={styles.cardHeader}>
+          <div>
+            <h3 class={styles.cardName}>Tyrone Niland</h3>
+            <p class={styles.cardTitle}>Managing Director</p>
+          </div>
+          <a href="#" class={styles.linkedinBtn}>LinkedIn profile</a>
+        </div>
+        <p class={styles.cardBio}>
+          Tyrone has over the past 15 years held senior positions at companies
+          in various sectors including digital communications, media, property
+          investment, software development and travel/tourism. His recent
+          experience includes capital raising, mergers and acquisitions,
+          operational reorganisations and strategy development. Tyrone has
+          worked on and led corporate transactions for engineering, technology
+          and industrial companies. Tyrone is an executive director of Bramel
+          and Growthstar, and a senior partner at European firms, Direct
+          Engineering and TradeTech Partners.
+        </p>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

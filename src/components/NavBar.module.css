@@ -1,0 +1,57 @@
+.header {
+  border-bottom: 1px solid #e0e0e0;
+  background-color: rgb(238, 238, 238);
+}
+
+.headerInner {
+  @apply max-w-6xl mx-auto px-6 py-4 flex items-center justify-between;
+}
+
+.logo {
+  @apply h-12;
+}
+
+.nav {
+  @apply flex items-center gap-1;
+}
+
+.navLink {
+  @apply px-4 py-2 text-sm text-bramel-dark border-b-2 border-transparent transition-colors;
+}
+
+.navLink:hover {
+  @apply text-bramel-orange no-underline;
+}
+
+.navLinkActive {
+  @apply text-bramel-orange border-b-2 border-bramel-orange;
+}
+
+.accentBar {
+  height: 1px;
+  background-color: #c0c0c0;
+}
+
+.mobileToggle {
+  @apply md:hidden flex flex-col gap-1 cursor-pointer p-2;
+}
+
+.mobileToggleBar {
+  @apply w-5 h-0.5 bg-bramel-dark;
+}
+
+.mobileNav {
+  @apply hidden md:flex;
+}
+
+.mobileNavOpen {
+  @apply flex flex-col absolute top-full left-0 right-0 bg-white border-b border-bramel-border-grey shadow-md z-50 py-2;
+}
+
+.mobileNavOpen .navLink {
+  @apply px-6 py-3 border-b-0;
+}
+
+.headerWrapper {
+  @apply relative;
+}

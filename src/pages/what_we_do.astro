@@ -1,0 +1,59 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import styles from "./what_we_do.module.css";
+---
+
+<BaseLayout title="Bramel offering | Boutique investment bank" currentPage="/what_we_do">
+  <main class={styles.page}>
+    <div class={styles.content}>
+      <h1 class={styles.heading}>What we do</h1>
+      <h2 class={styles.industriesHeading}>Industries</h2>
+
+      <div class={styles.leftBody}>
+        <p class={styles.text}>
+          Bramel's multi-disciplinary skillset and its considerable experience
+          enables a broad-range of service offerings for clients, partners and
+          principals.
+        </p>
+
+        <p class={styles.text}>
+          Having worked on a multitude of corporate transactions, capital
+          raising and investment opportunities, Bramel's investment banking
+          capabilities are broad and include:
+        </p>
+
+        <ul class={styles.bulletList}>
+          <li class={styles.bulletItem}>Mergers &amp; acquisitions</li>
+          <li class={styles.bulletItem}>Management and leveraged buyouts</li>
+          <li class={styles.bulletItem}>Listings and delistings</li>
+          <li class={styles.bulletItem}>Capital raising, including equity and debt funding</li>
+          <li class={styles.bulletItem}>Special opportunity transactions</li>
+        </ul>
+
+        <p class={styles.text}>
+          Additionally, Bramel supports company shareholders and
+          management teams with strategic input into management of assets
+          and value realisation.
+        </p>
+      </div>
+
+      <div class={styles.rightBody}>
+        <p class={styles.industriesIntro}>
+          Bramel's team has experience in most industries, including:
+        </p>
+
+        <ul class={styles.industryList}>
+          <li class={styles.industryItem}>Industrial (including manufacturing)</li>
+          <li class={styles.industryItem}>Real estate</li>
+          <li class={styles.industryItem}>Mining (including oil &amp; gas)</li>
+          <li class={styles.industryItem}>Technology (including fintech)</li>
+          <li class={styles.industryItem}>Financial services</li>
+          <li class={styles.industryItem}>Transport &amp; logistics</li>
+          <li class={styles.industryItem}>Consumer goods (retail and wholesale)</li>
+          <li class={styles.industryItem}>Construction</li>
+          <li class={styles.industryItem}>Energy (including renewable)</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

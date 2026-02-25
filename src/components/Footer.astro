@@ -1,0 +1,42 @@
+---
+import styles from "./Footer.module.css";
+---
+
+<footer class={styles.footer}>
+  <div class={styles.footerInner}>
+    <div class={styles.connectCol}>
+      <div class={styles.connectHeading}>
+        <span class={styles.connectCircle}></span>
+        <span class={styles.connectText}>Let's<br />Connect</span>
+      </div>
+    </div>
+
+    <div>
+      <h4 class={styles.colHeading}>Talk to us</h4>
+      <p class={styles.colText}>
+        T: +27 (11) 807-9380<br />
+        E: <a href="mailto:sayhello@bramel.co.za" class={styles.colLinkInline}>sayhello@bramel.co.za</a>
+      </p>
+    </div>
+
+    <div>
+      <h4 class={styles.colHeading}>Find us</h4>
+      <p class={styles.colText}>
+        Bradenham Hall<br />
+        7 Mellis Road<br />
+        Rivonia<br />
+        South Africa
+      </p>
+    </div>
+
+    <div>
+      <h4 class={styles.colHeading}>Links</h4>
+      <a href="/" class={styles.colLink}>Home</a>
+      <a href="/about_us" class={styles.colLink}>About us</a>
+      <a href="/what_we_do" class={styles.colLink}>What we do</a>
+      <a href="/contact" class={styles.colLink}>Contact</a>
+    </div>
+  </div>
+
+  <p class={styles.copyright}>&copy; 2021 - 2026 Bramel Business Solutions (Pty) Ltd</p>
+</footer>

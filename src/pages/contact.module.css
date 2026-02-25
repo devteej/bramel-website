@@ -1,0 +1,47 @@
+.page {
+  @apply max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-12;
+}
+
+.leftCol {
+  @apply flex flex-col;
+}
+
+.intro {
+  @apply text-sm text-bramel-dark leading-relaxed mb-8;
+}
+
+.sectionHeading {
+  @apply text-xl font-bold text-bramel-dark mb-4;
+}
+
+.text {
+  @apply text-sm text-bramel-dark leading-relaxed mb-2;
+}
+
+.link {
+  @apply text-sm text-bramel-dark underline;
+}
+
+.addressSection {
+  @apply mt-8;
+}
+
+.addressLabel {
+  @apply text-sm font-bold text-bramel-dark mb-2;
+}
+
+.addressText {
+  @apply text-sm text-bramel-dark leading-relaxed;
+}
+
+.mapContainer {
+  @apply rounded-lg overflow-hidden h-80 bg-bramel-light-grey flex items-center justify-center;
+}
+
+.mapPlaceholder {
+  @apply text-bramel-grey text-sm text-center;
+}
+
+.mapIframe {
+  @apply w-full h-full border-0;
+}

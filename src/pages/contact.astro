@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import styles from "./contact.module.css";
+---
+
+<BaseLayout title="Contact Bramel | Boutique investment bank" currentPage="/contact">
+  <main class={styles.page}>
+    <div class={styles.leftCol}>
+      <p class={styles.intro}>
+        Contact us to get a boutique investment bank on your team.
+      </p>
+
+      <h2 class={styles.sectionHeading}>Talk to us</h2>
+      <p class={styles.text}>
+        Email us: <a href="mailto:sayhello@bramel.co.za" class={styles.link}>sayhello@bramel.co.za</a>
+      </p>
+      <p class={styles.text}>
+        Telephone us: <a href="tel:+27118079380" class={styles.link}>+27 (11) 807-9380</a>
+      </p>
+
+      <div class={styles.addressSection}>
+        <h2 class={styles.sectionHeading}>Find us</h2>
+        <p class={styles.addressLabel}>South Africa</p>
+        <p class={styles.addressText}>
+          Bradenham Hall - North Block<br />
+          7 Mellis Road<br />
+          Rivonia, Johannesburg
+        </p>
+      </div>
+    </div>
+
+    <div class={styles.mapContainer}>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.5!2d28.06!3d-26.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBradenham+Hall%2C+7+Mellis+Rd%2C+Rivonia%2C+Sandton!5e0!3m2!1sen!2sza!4v1"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Bramel office location"
+        class={styles.mapIframe}
+      ></iframe>
+    </div>
+  </main>
+</BaseLayout>

@@ -1,0 +1,75 @@
+---
+import styles from "./NavBar.module.css";
+
+interface Props {
+  currentPage?: string;
+}
+
+const { currentPage = "" } = Astro.props;
+
+const navItems = [
+  { label: "Home", href: "/" },
+  { label: "About us", href: "/about_us" },
+  { label: "What we do", href: "/what_we_do" },
+  { label: "Contact", href: "/contact" },
+];
+---
+
+<div class={styles.headerWrapper}>
+  <header class={styles.header}>
+    <div class={styles.headerInner}>
+      <a href="/">
+        <img
+          src="/images/bramel_logo_2023_black.png"
+          alt="Bramel Business Solutions"
+          class={styles.logo}
+        />
+      </a>
+
+      <button class={styles.mobileToggle} aria-label="Toggle navigation" id="nav-toggle">
+        <span class={styles.mobileToggleBar}></span>
+        <span class={styles.mobileToggleBar}></span>
+        <span class={styles.mobileToggleBar}></span>
+      </button>
+
+      <nav class={styles.mobileNav} id="nav-menu">
+        {navItems.map((item) => (
+          <a
+            href={item.href}
+            class:list={[
+              styles.navLink,
+              currentPage === item.href && styles.navLinkActive,
+            ]}
+          >
+            {item.label}
+          </a>
+        ))}
+      </nav>
+    </div>
+  </header>
+  <div class={styles.accentBar}></div>
+</div>
+
+<script>
+  const toggle = document.getElementById("nav-toggle");
+  const menu = document.getElementById("nav-menu");
+
+  toggle?.addEventListener("click", () => {
+    const isOpen = menu?.classList.contains("mobile-open");
+    if (isOpen) {
+      menu?.classList.remove("mobile-open");
+      menu?.setAttribute("style", "");
+    } else {
+      menu?.classList.add("mobile-open");
+      menu?.setAttribute(
+        "style",
+        "display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:white;border-bottom:1px solid #E0E0E0;box-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1);z-index:50;padding:0.5rem 0;"
+      );
+      const links = menu?.querySelectorAll("a");
+      links?.forEach((link) => {
+        link.style.padding = "0.75rem 1.5rem";
+        link.style.borderBottom = "none";
+      });
+    }
+  });
+</script>

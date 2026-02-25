@@ -1,0 +1,95 @@
+.page {
+  @apply max-w-6xl mx-auto px-6 py-10;
+}
+
+.content {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6;
+}
+
+.heading {
+  @apply text-2xl font-bold text-bramel-dark mb-0;
+}
+
+.leftBody {
+  @apply flex flex-col;
+}
+
+.rightBody {
+  @apply flex flex-col;
+}
+
+.industriesHeading {
+  @apply text-2xl font-bold text-bramel-orange mb-0;
+}
+
+.text {
+  @apply text-sm text-bramel-dark leading-relaxed mb-4;
+}
+
+.bulletList {
+  @apply list-disc ml-6 mb-4;
+}
+
+.bulletItem {
+  @apply text-sm text-bramel-dark leading-relaxed mb-1;
+}
+
+.industriesIntro {
+  @apply text-sm text-bramel-orange leading-relaxed mb-4;
+}
+
+.industryList {
+  @apply list-disc ml-6;
+}
+
+.industryItem {
+  @apply text-sm text-bramel-orange leading-relaxed mb-1;
+}
+
+.transactionsSection {
+  @apply mt-12;
+}
+
+.transactionsHeading {
+  @apply text-2xl font-bold text-bramel-dark mb-6;
+}
+
+.carousel {
+  @apply bg-bramel-orange rounded-lg p-8 md:p-12 relative overflow-hidden;
+}
+
+.carouselInner {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8 items-center;
+}
+
+.carouselTitle {
+  @apply text-2xl md:text-3xl text-white font-light;
+}
+
+.carouselText {
+  @apply text-base text-white font-light leading-relaxed;
+}
+
+.carouselDots {
+  @apply flex justify-center gap-2 mt-6;
+}
+
+.carouselDot {
+  @apply w-2 h-2 bg-white rounded-sm opacity-50;
+}
+
+.carouselDotActive {
+  @apply opacity-100;
+}
+
+.carouselNav {
+  @apply absolute top-1/2 -translate-y-1/2 text-white text-2xl cursor-pointer opacity-70 hover:opacity-100 bg-transparent border-none;
+}
+
+.carouselNavPrev {
+  @apply left-2;
+}
+
+.carouselNavNext {
+  @apply right-2;
+}

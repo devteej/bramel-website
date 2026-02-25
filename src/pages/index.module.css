@@ -1,0 +1,29 @@
+.main {
+  @apply max-w-6xl mx-auto px-6 py-12;
+}
+
+.heading {
+  @apply text-black font-medium mb-6;
+  font-size: 27px;
+}
+
+.layout {
+  @apply grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-8 items-center;
+}
+
+.heroText {
+  @apply text-bramel-grey font-light leading-relaxed text-justify;
+  font-size: 27px;
+}
+
+.chevronImg {
+  @apply flex-shrink-0;
+}
+
+.servicesItems {
+  @apply flex flex-col gap-2;
+}
+
+.serviceItem {
+  @apply text-base text-bramel-dark;
+}

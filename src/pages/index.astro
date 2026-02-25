@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import styles from "./index.module.css";
+---
+
+<BaseLayout title="Bramel | Boutique investment bank" currentPage="/">
+  <main class={styles.main}>
+    <h1 class={styles.heading}>Corporate action specialists</h1>
+
+    <div class={styles.layout}>
+      <p class={styles.heroText}>
+        Bramel is a boutique South African investment bank that crafts and
+        implements bespoke corporate actions.
+      </p>
+
+      <img src="/images/chevron.png" alt="" class={styles.chevronImg} aria-hidden="true" />
+
+      <div class={styles.servicesItems}>
+        <span class={styles.serviceItem}>Mergers &amp; acquisitions</span>
+        <span class={styles.serviceItem}>Leveraged buyouts and buyins</span>
+        <span class={styles.serviceItem}>Public and private equity</span>
+        <span class={styles.serviceItem}>Debt funding</span>
+        <span class={styles.serviceItem}>Corporate finance solutions</span>
+        <span class={styles.serviceItem}>Innovative commercial structures</span>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
