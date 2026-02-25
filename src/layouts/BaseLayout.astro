@@ -26,9 +26,11 @@ const { title, currentPage = "" } = Astro.props;
     <link rel="icon" type="image/png" href="/images/bramel_logo_2023_icon_black_on_transparent.png" />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="layout-body">
     <NavBar currentPage={currentPage} />
-    <slot />
+    <div class="layout-main">
+      <slot />
+    </div>
     <Footer />
   </body>
 </html>

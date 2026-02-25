@@ -7,8 +7,12 @@
     @apply scroll-smooth;
   }
 
-  body {
-    @apply font-sans text-bramel-dark antialiased;
+  body.layout-body {
+    @apply font-sans text-bramel-dark antialiased flex flex-col min-h-screen;
+  }
+
+  .layout-main {
+    flex: 1 0 auto;
   }
 
   h1,
